@@ -25,6 +25,7 @@ walk(orig, fn (f string) {
 		new_txt := txt.replace_each([
 			"import gg", "import vgg as gg"
 			"import sokol.", "import vsokol."
+			"ui_mode: true", "ui_mode: true\n\t\timgui: true"
 		])
 		new_f := f.replace("$orig", "ui")
 		println(new_f)
